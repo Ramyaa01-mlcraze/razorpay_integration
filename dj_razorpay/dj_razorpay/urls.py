@@ -21,7 +21,7 @@ from django.urls import path
 from payment import views
 
 urlpatterns = [
-	path('', views.homepage, name='index'),
+	path('', views.homepage, name='payment'),
 	path('paymenthandler/', views.paymenthandler, name='paymenthandler'),
 	path('admin/', admin.site.urls),
 ]

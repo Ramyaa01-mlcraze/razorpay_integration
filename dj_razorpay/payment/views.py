@@ -31,7 +31,7 @@ def homepage(request):
 	context['currency'] = currency
 	context['callback_url'] = callback_url
 
-	return render(request, 'index.html', context=context)
+	return render(request, 'payment.html', context=context)
 
 
 # we need to csrf_exempt this url as
